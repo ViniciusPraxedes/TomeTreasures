@@ -1,0 +1,299 @@
+.products {
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start; // Align items to the start (left)
+    padding-left: 40px; // Add padding to align content away from the left edge
+
+    h1 {
+      font-size: 50px;
+      margin-left: -50px;
+      margin-bottom: 10px; // Add margin-bottom for spacing
+    }
+
+    p {
+      margin-top: -10px;
+      font-size: 25px;
+      margin-bottom: 20px; // Add margin-bottom for spacing
+      width: 60%;
+      text-align: justify;
+      text-justify: distribute-all-lines;
+    }
+
+    .catImg {
+      width: 100vh;
+      height: 20vh;
+      margin-left: -20px;
+      padding-bottom: 70px;
+      object-fit: cover;// Maintain aspect ratio
+    }
+  }
+
+
+  .middle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #41403d;
+    color: white;
+    padding-bottom:20px ;
+
+    .search-box{
+      padding-top: 30px;
+      padding-right: 6vh;
+      position: relative;
+
+      .row{
+        display: flex;
+        align-items: center;
+
+        input {
+          width: 100vh;
+          max-width: 400px;
+          height: 30px;
+          font-size: 14px;
+          padding: 6px;
+          border: 1px solid #ccc;
+          border-radius: 10px 0px 0px 10px;
+          margin-top: 14px;
+          margin-left: 30px;
+        }
+        .searchIcon {
+          font-size: 1.3em;
+          background-color: red;
+          padding: 11.5px;
+          border-radius: 0px 10px 10px 0px;
+          color: white;
+          cursor: pointer;
+          margin-top: 14px;
+
+        }
+      }
+
+
+      .result-box{
+        position: absolute;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        max-width: 450px;
+        margin-left: 2.5vh;
+        z-index: 1;
+
+        ul {
+          margin-top: 0;
+          padding: 0;
+          margin-right: 20vh;
+          width: 100%;
+          max-width: 409px;
+        }
+        li{
+          padding: 0px;
+          border-bottom: 1px solid #999;
+          list-style: none;
+          cursor: pointer;
+          text-align: left; // Align text to the left
+
+          &:hover {
+          }
+        }
+
+
+        .card{
+          margin: 0;
+          font-size: 10px;
+          width: 100%;
+          max-width: 390px;
+          padding: 10px 10px 10px 10px;
+
+          &:hover {
+            background-color: #41403d;
+            .card-title{
+              color: white;
+            }
+          }
+
+          .card-price{
+            display: none;
+          }
+
+          button{
+            display: none;
+          }
+
+          .card-text{
+            display: none;
+          }
+
+          .card-image{
+            display: none;
+          }
+
+        }
+
+
+
+      }
+
+    }
+
+    .filterItem {
+      padding-left: 3vh;
+      padding-right: 3vh;
+      h2 {
+        font-size: 18px;
+        margin-right: 10px;
+      }
+
+      .inputItem {
+        margin-bottom: 10px;
+
+        select {
+          width: 200px;
+          padding: 8px;
+          font-size: 16px;
+          border: 1px solid #cccccc;
+          border-radius: 5px;
+          background-color: #fff;
+          cursor: pointer;
+          transition: border-color 0.3s ease;
+
+          &:hover {
+            border-color: red;
+          }
+
+          &:focus {
+            outline: none;
+            border-color: red;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  .bottom {
+    flex: 2;
+
+    .card {
+      width: 250px; /* Adjust card width as needed */
+      /* Add additional styles for the card component if necessary */
+
+      img {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s; /* Adding transition for smooth effect */
+      }
+
+      img:hover {
+        filter: brightness(70%); /* Reduce brightness to 70% on hover */
+      }
+
+      .card button:hover {
+        background-color: red;
+      }
+
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+.products{
+  padding: 0;
+  .top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-left: 0px; // Use percentage for responsiveness
+
+    h1 {
+      font-size: 10vw; // Responsive font size
+      margin-left: 0;
+      margin-bottom: 2vw; // Responsive margin
+    }
+
+    p {
+      font-size: 4vw; // Responsive font size
+      margin-top: -1vw; // Responsive margin
+      margin-bottom: 4vw; // Responsive margin
+      width: 90%; // Use percentage for responsiveness
+      text-align: justify;
+    }
+
+    .catImg {
+      width: 100%; // Use percentage for responsiveness
+      height: auto; // Maintain aspect ratio
+      max-height: 40vh; // Limit maximum height
+      margin-left: -5%; // Use percentage for responsiveness
+      margin-bottom: 8vw; // Responsive margin
+      object-fit: cover;
+    }
+  }
+
+
+  .middle {
+    display: flex;
+    flex-direction: column; /* Change to column layout for small screens */
+    align-items: center; /* Center items vertically */
+    background-color: #41403d;
+    color: white;
+    margin-top: 3vw; /* Responsive margin */
+
+    .search-box{
+      .row{
+        padding-left: 3vh;
+        margin-bottom: 1vh;
+        input{
+          width: 30vh;
+        }
+      }
+
+
+      .result-box{
+        padding-left: 4vh;
+        margin-top: -1vh;
+        width: 29.3vh;
+      }
+
+      .filterItem {
+        margin-top: 2vh;
+
+        h2 {
+          font-size: 3vw; /* Responsive font size */
+          margin-right: 2vw; /* Responsive margin */
+        }
+
+        .inputItem {
+          margin-bottom: 2vw; /* Responsive margin */
+
+          select {
+            width: 70%; /* Responsive width */
+            padding: 2vw; /* Responsive padding */
+            font-size: 3vw; /* Responsive font size */
+            border-radius: 5px;
+            cursor: pointer;
+            transition: border-color 0.3s ease;
+
+          }
+        }
+      }
+    }
+
+  }
+
+
+
+
+}
+
+}
