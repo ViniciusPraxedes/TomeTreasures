@@ -1,87 +1,88 @@
-.contact{
-  background-color: #2879fe;
-  color: white;
-  padding: 15px;
-  margin-top: 10em;
+.contact {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2879fe;
+  margin-top: 40px;
+  padding-bottom: 20px;
 
-  .wrapper{
-    width: 100vh;
+
+  h1 {
+    padding: 18px;
+    margin: 0;
+    font-size: 15px;
+    color: white;
+  }
+
+  .wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
-    .mail{
-      margin-left: 40vh;
-    }
-
-    input{
-      padding: 10px;
-      border: none;
-      border-radius: 5px 0 0  5px;
-    }
-
-    button{
-      padding: 10px;
-      color: white;
-      background: #333;
-      border-radius: 0 5px 5px 0;
-      border: none;
-    }
-
-    .icons{
+    .mail {
       display: flex;
+      align-items: center;
+
+      input{
+        padding: 10px;
+        border: none;
+        border-radius: 5px 0 0  5px;
+
+      }
+
+      button {
+        padding: 11px;
+        color: white;
+        background: #333;
+        border-radius: 0 5px 5px 0;
+        border: none;
+        transition: background 0.3s ease; // Adding transition for smooth effect
+
+        &:hover {
+          background: red; // Changing background color on hover
+          cursor: pointer; // Changing cursor on hover
+        }
+      }
+    }
+
+    .icons {
+      display: flex;
+      padding-left: 30px;
       gap: 10px;
-      margin-right: 24vh;
+      color: white;
+
     }
   }
 }
 
 @media screen and (max-width: 768px) {
 
-  .contact {
-    background-color: #2879fe;
-    color: white;
-    padding: 15px;
-    margin-top: 10em;
-    display: flex;
-
-    justify-content: center;
+  .contact{
 
     .wrapper {
-      width: 50%;
-      display: flex;
-      align-items: center;
       flex-direction: column;
 
-      .mail{
-        margin: auto;
-        padding-top: 10px;
-      }
+      .mail {
+        flex-direction: row;
+        align-items: center;
 
-      input {
-        padding: 10px;
-        margin-right: 50vh;
-        border-radius: 0px;
+        input {
+          padding-left: 60px;
+          margin-bottom: 0;
+        }
 
-      }
-
-      button {
-        padding: 10px;
-        border-radius: 0px;
-        margin-right: 50vh;
-        margin-top: 2vh;
-
+        button {
+          margin-top: 0;
+        }
       }
 
       .icons {
-        display: flex;
-        gap: 10px;
-        margin: 20px;
+        padding-top: 20px;
+        margin-top: 0;
       }
     }
+
   }
+
 
 
 }

@@ -1,5 +1,4 @@
 import "./Contact.scss"
-import {Button} from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -9,11 +8,15 @@ import PinterestIcon from "@mui/icons-material/Pinterest";
 const Contact = () => {
     return (
         <div className="contact">
+
+            <h1>BE IN TOUCH</h1>
             <div className="wrapper">
+
                 <div className="mail">
                     <input type="text" placeholder="Enter your e-mail..." />
                     <button>JOIN US</button>
                 </div>
+
                 <div className="icons">
                     <FacebookIcon />
                     <InstagramIcon />
@@ -21,6 +24,7 @@ const Contact = () => {
                     <GoogleIcon />
                     <PinterestIcon />
                 </div>
+
             </div>
         </div>
     );

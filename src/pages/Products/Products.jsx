@@ -8,9 +8,6 @@ import SearchIcon from "@mui/icons-material/Search";
 
 const Products = () =>{
 
-    const catId = parseInt(useParams().id)
-    const [sort, setSort] = useState()
-
 
     const category = useParams().category;
     const uppercaseCategory = category.toUpperCase();
@@ -67,7 +64,7 @@ const Products = () =>{
         }
 
         fetchData();
-    }, [location.pathname]); // Dependency on location.pathname
+    }, [location.pathname]);
 
     const handleChange = event => {
         setSearchTerm(event.target.value);
@@ -84,6 +81,25 @@ const Products = () =>{
 
 
 
+
+
+    const [sort, setSort] = useState()
+
+    const sortedData = data.slice().sort((a, b) => {
+        if (sort === 'asc') {
+            return a.price - b.price;
+        } else if (sort === 'desc') {
+            return b.price - a.price;
+        }
+        // Add more cases for other sorting options if needed
+    });
+    const handleSort = event => {
+        const value = event.target.value;
+        setSort(value);
+    };
+
+
+
     return(
         <div className="products">
 
@@ -93,19 +109,15 @@ const Products = () =>{
                 <p>
                     {categoryText}
                 </p>
-
-                {/*<img className="catImg" src={imgSrc} alt=""/>*/}
-
             </div>
 
             <div className="middle">
                 <div className="filterItem">
                     <h2>Sort by</h2>
                     <div className="inputItem">
-                        <select value={sort} onChange={e => setSort(e.target.value)}>
+                        <select value={sort} onChange={handleSort}>
                             <option value="asc">Price (Lowest first)</option>
                             <option value="desc">Price (Highest first)</option>
-                            <option value="popularity">Popularity</option>
                             <option value="titleAZ">Title A-Z</option>
                         </select>
                     </div>
@@ -139,13 +151,10 @@ const Products = () =>{
             <div className="bottom">
 
                 <div className="books">
-                    {data.map((item, index) => (
-                        <Card className="card" item={item} key={index}/>
+                    {sortedData.map((item, index) => (
+                        <Card className="card" item={item} key={index} />
                     ))}
                 </div>
-
-
-                {/*<List catId={catId} maxPrice={maxPrice} sort={sort}/>*/}
             </div>
 
         </div>
