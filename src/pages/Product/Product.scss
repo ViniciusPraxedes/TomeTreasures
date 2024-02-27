@@ -95,6 +95,27 @@
       }
     }
 
+    .add-success{
+      width: 250px;
+      padding: 10px;
+      background-color: green;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      cursor: pointer;
+      border: none;
+      font-weight: 500;
+      transition: transform 0.3s; /* Add transition for smooth effect */
+
+      /* Move up on hover */
+      &:hover {
+        transform: translateY(-5px); /* Move up by 5 pixels on hover */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+      }
+    }
+
     .language{
       font-size: 18px;
       display: flex;

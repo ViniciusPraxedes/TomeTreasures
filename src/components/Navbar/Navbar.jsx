@@ -7,19 +7,21 @@ import "./Navbar.scss";
 import axios from "axios";
 import Card from "../Card/Card";
 import Cart from "../Cart/Cart";
+import {useSelector} from "react-redux";
 
 const Navbar = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [data, setData] = useState([]);
     const [open, setOpen] = useState(false);
+    const products = useSelector((state) => state.cart.products);
+
 
     useEffect(() => {
         async function fetchData() {
             try {
                 const response = await axios.get("http://api-gateway.eu-north-1.elasticbeanstalk.com:8080/book/all");
                 setData(response.data);
-                console.log(response);
             } catch (error) {
                 console.error("Error fetching data:", error);
             }
@@ -89,7 +91,7 @@ const Navbar = () => {
                         <a>My account</a>
                         <div className="cartIcon" onClick={handleCartToggle}>
                             <ShoppingCartOutlinedIcon className="shoppingCartIcon" />
-                            <span className="shoppingCartCounter">0</span>
+                            <span className="shoppingCartCounter">{products.length}</span>
                         </div>
                         <a onClick={handleCartToggle}>Shopping cart</a>
                     </div>
