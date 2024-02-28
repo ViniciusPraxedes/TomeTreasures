@@ -1,40 +1,37 @@
-.slider{
-  height: calc(50vh - 80px);
-  width: 100%;
+.slider-container {
+  padding-top: 50px;
+  width: 80%;
   position: relative;
-  overflow: hidden;
+  margin: auto;
+}
 
-  .container{
-    width: 300vw;
-    height: 100%;
-    display: flex;
-    transition: all 1s ease;
+.custom-dot-list-style {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-    img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+.slider-item {
+
+  .img-container {
+    width: 60%;
+    margin: auto;
+    img {
+      width: 100%; // Adjust image width to fit the container
+      height: auto; // Maintain aspect ratio
+      display: block;
     }
   }
+}
 
-  .icons{
-    width: fit-content;
-    display: flex;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 100px;
-    gap: 10px;
-    margin: auto;
+@media screen and (max-width: 768px) {
+  .slider-item {
 
-    .icon{
-      width: 50px;
-      height: 50px;
-      border: 1px solid #999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
+    .img-container {
+      width: 100%;
+      img {
+        width: 100%; // Adjust image width to fit the container
+      }
     }
   }
 }

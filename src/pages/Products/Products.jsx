@@ -24,7 +24,9 @@ const Products = () =>{
             "ROMANCE",
             "FANTASY",
             "HISTORY",
-            "POETRY"
+            "POETRY",
+            "BEST_SELLER",
+            "TRENDING"
             // Add more category names here
         ];
 
@@ -34,7 +36,9 @@ const Products = () =>{
             "Step into our Romance section for an enchanting journey. Explore captivating love stories, passionate encounters, and heartwarming romances. Lose yourself in tales of affection, desire, and happily ever afters. Let your heart flutter and your emotions soar as you delve into the world of romance.",
             "Enter our Fantasy section for an enchanting adventure. Explore mystical lands, encounter legendary creatures, and embark on heroic quests. Dive into tales of adventure, courage, and destiny. Unleash your imagination and discover endless possibilities.",
             "Dive into the past with our History section. Explore the stories of civilizations, revolutions, and remarkable individuals that shaped our world. From ancient times to modern eras, uncover the captivating tales that define humanity's journey through time",
-            "Discover our Poetry section for a journey through words. Immerse yourself in lyrical verses, poignant emotions, and evocative imagery. Explore the beauty of language and the depth of human experience captured in every line. Let the rhythm of poetry transport you to new worlds and awaken your soul to the power of expression."
+            "Discover our Poetry section for a journey through words. Immerse yourself in lyrical verses, poignant emotions, and evocative imagery. Explore the beauty of language and the depth of human experience captured in every line. Let the rhythm of poetry transport you to new worlds and awaken your soul to the power of expression.",
+            "Explore a curated selection of the most captivating and beloved books from around the globe. From gripping thrillers to heartwarming romances, embark on unforgettable journeys that will ignite your imagination and stir your soul. Discover your next literary obsession here, where the best stories await. Welcome to a world of literary excellence.",
+            "Explore the latest and most buzz-worthy reads that are capturing hearts and minds across the literary world. From breakout debuts to highly anticipated releases, dive into the hottest titles shaping conversations and setting trends. Stay ahead of the curve and discover your next literary obsession here. Welcome to the forefront of literary excitement!"
             // Add more category texts here
         ];
 

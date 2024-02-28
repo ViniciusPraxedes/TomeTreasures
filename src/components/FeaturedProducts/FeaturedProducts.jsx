@@ -2,6 +2,9 @@ import Card from "../Card/Card";
 import "./FeaturedProducts.scss"
 import {useEffect, useState} from "react";
 import axios from "axios";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import Carousel from "react-multi-carousel";
+
 
 const FeaturedProducts = ({type}) => {
 
@@ -20,28 +23,75 @@ const FeaturedProducts = ({type}) => {
         fetchData();
     }, []);
 
+    const responsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 6
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+        }
+    };
+
 
 
     return(
-        <div className="featuredProducts">
+        <div>
 
-            <div className="top">
-                <h1>{type}</h1>
-                <p>
-                    Explore our best sellers: captivating reads that have
-                    captured hearts and minds. Discover the latest releases and enduring favorites
-                    that everyone is talking about. Find your next page-turner today!
-                </p>
+
+            <div className="first">
+
+                <div className="left">
+                    <h1>Trending</h1>
+                </div>
+
+                <div className="right">
+                    <div className="link">
+                        <a className="link" href="/products/trending"><h2>Go to Trending</h2></a>
+                    </div>
+                    <div className="icon">
+                        <ChevronRightIcon className="icon-right"/>
+                    </div>
+                </div>
+
             </div>
 
-            <div className="bottom">
+
+
+
+
+            <Carousel
+                swipeable={true}
+                draggable={true}
+                showDots={true}
+                responsive={responsive}
+                infinite={true}
+                keyBoardControl={true}
+                transitionDuration={500}
+                containerClass="carousel-container"
+                dotListClass="custom-dot-list-style"
+                itemClass="carousel-item-padding-40-px"
+            >
                 {data.map((item, index) => (
                     <Card className="card" item={item} key={index}/>
                 ))}
-            </div>
+            </Carousel>
+
+
 
 
         </div>
+
     );
 
 }
