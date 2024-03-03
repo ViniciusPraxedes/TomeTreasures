@@ -12,4 +12,4 @@ phases:
       - npm run build   # Build the React app
   post_build:
     commands:
-      - aws s3 sync build/ s3://tome-treasures   # Sync build artifacts to S3 bucket
+      - aws s3 cp --recursive ./build s3://tome-treasures/   # Sync build artifacts to S3 bucket
