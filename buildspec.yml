@@ -9,4 +9,4 @@ phases:
         - npm run build
     post-build:
       commands:
-        - aws s3 cp --recursive ./build s3://tome-treasures/
+        - aws s3 sync build/ s3://tome-treasures
