@@ -53,7 +53,7 @@ const Reviews = () =>{
                     <FavoriteBorderIcon className="icon"/>
                 </div>
                 <div>
-                    <h1>Reviews from our favorites</h1>
+                    <h1>Reviews from our customers</h1>
                 </div>
             </div>
 

@@ -8,6 +8,8 @@
     "@mui/icons-material": "^5.15.10",
     "@mui/material": "^5.15.10",
     "@reduxjs/toolkit": "^2.2.1",
+    "@stripe/react-stripe-js": "^2.5.1",
+    "@stripe/stripe-js": "^3.0.6",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -28,6 +30,8 @@
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "http://localhost:3000/",
+  "proxy": "http://api-gateway.eu-north-1.elasticbeanstalk.com:8080/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

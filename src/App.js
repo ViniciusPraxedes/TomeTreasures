@@ -8,6 +8,8 @@ import Product from "./pages/Product/Product";
 import "./app.scss"
 import Contact from "./components/Contact/Contact";
 import CategoryBar from "./components/CategoryBar/CategoryBar";
+import Success from "./pages/Payment/Success";
+import Cancel from "./pages/Payment/Cancel";
 
 const Layout = () =>{
     return(
@@ -23,12 +25,12 @@ const Layout = () =>{
 
 const router = createBrowserRouter([
     {
-        path:"/",
-        element:<Layout/>,
-        children:[
+        path: "/",
+        element: <Layout/>,
+        children: [
             {
                 path: "/",
-                element: <Home></Home>
+                element: <Home/>
             },
             {
                 path: "/products/:category",
@@ -37,10 +39,18 @@ const router = createBrowserRouter([
             {
                 path: "/product/:id",
                 element: <Product/>
-            },
+            }
         ]
+    },
+    {
+        path: "/success",
+        element: <Success/>
+    },
+    {
+        path: "/cancel",
+        element: <Cancel/>
     }
-])
+]);
 
 function App() {
     return (

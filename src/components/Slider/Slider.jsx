@@ -1,8 +1,5 @@
-import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
-import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
 import "./Slider.scss"
 import {useState} from "react";
-import Card from "../Card/Card";
 import Carousel from "react-multi-carousel";
 
 const Slider = () => {
@@ -11,8 +8,8 @@ const Slider = () => {
 
     const data = [
         "https://marketplace.canva.com/EAE6uxzge6c/1/0/1600w/canva-yellow-and-white-minimalist-big-sale-banner-BjBIq-T_6j4.jpg",
-        "https://marketplace.canva.com/EAFED0hv9G0/1/0/1600w/canva-blue-pink-modern-special-offer-sale-banner-J5VkNReQ8WA.jpg",
-        "https://marketplace.canva.com/EAFIEXwl7lg/1/0/1600w/canva-blue-dynamic-fashion-special-sale-banner-T47g_lhdiAA.jpg",
+        "https://marketplace.canva.com/EAE6uxzge6c/1/0/1600w/canva-yellow-and-white-minimalist-big-sale-banner-BjBIq-T_6j4.jpg",
+        "https://marketplace.canva.com/EAE6uxzge6c/1/0/1600w/canva-yellow-and-white-minimalist-big-sale-banner-BjBIq-T_6j4.jpg",
     ];
 
     const prevSlide = () => {

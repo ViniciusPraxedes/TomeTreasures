@@ -94,6 +94,8 @@ const Products = () =>{
             return a.price - b.price;
         } else if (sort === 'desc') {
             return b.price - a.price;
+        } else if (sort === 'titleAZ') {
+            return a.name.localeCompare(b.name); // Sort by name A-Z
         }
         // Add more cases for other sorting options if needed
     });
