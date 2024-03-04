@@ -25,7 +25,7 @@ const Product = () =>{
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await axios.get(`http://api-gateway.eu-north-1.elasticbeanstalk.com:8080/book/${id}`);
+                const response = await axios.get(`https://book-service-r6tn.onrender.com/book/${id}`);
                 setData(response.data);
 
             } catch (error) {

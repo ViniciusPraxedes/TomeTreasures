@@ -13,7 +13,7 @@ const FeaturedProducts = ({type}) => {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await axios.get("http://api-gateway.eu-north-1.elasticbeanstalk.com:8080/book/books/TRENDING");
+                const response = await axios.get("https://book-service-r6tn.onrender.com/book/books/TRENDING");
                 setData(response.data);
 
             } catch (error) {

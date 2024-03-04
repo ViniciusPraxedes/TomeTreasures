@@ -13,7 +13,7 @@ const BestSeller = ({type}) => {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await axios.get("http://api-gateway.eu-north-1.elasticbeanstalk.com:8080/book/books/BEST_SELLER");
+                const response = await axios.get("https://book-service-r6tn.onrender.com/book/books/BEST_SELLER");
                 setData(response.data);
 
             } catch (error) {
