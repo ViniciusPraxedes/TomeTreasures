@@ -31,7 +31,7 @@
     "web-vitals": "^2.1.4"
   },
   "homepage": "http://localhost:3000/",
-  "proxy": "http://api-gateway.eu-north-1.elasticbeanstalk.com:8080/",
+  "proxy": "https://order-service-kinn.onrender.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
