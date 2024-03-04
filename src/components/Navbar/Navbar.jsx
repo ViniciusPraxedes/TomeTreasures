@@ -51,7 +51,7 @@ const Navbar = () => {
 
 
                 <div className="left">
-                    <Link className="link" to="/">Tome Treasures</Link>
+                    <Link className="link" onClick={() => {window.location.href="/"}}>Tome Treasures</Link>
                 </div>
 
 
@@ -79,11 +79,11 @@ const Navbar = () => {
 
                 <div className="right">
                     <div className="item">
-                        <Link className="link" to="/">About</Link>
+                        <Link className="link" onClick={() => {window.location.href="/"}}>About</Link>
                     </div>
 
                     <div className="item">
-                        <Link className="link" to="/">Contact</Link>
+                        <Link className="link" onClick={() => {window.location.href="/"}}>Contact</Link>
                     </div>
 
                     <div className="icons">

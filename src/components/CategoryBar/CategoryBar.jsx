@@ -8,27 +8,27 @@ const CategoryBar = () => {
         <div className="category">
             <div className="wrapper">
                 <div className="items">
-                    <Link to="/products/best_seller">Best seller</Link>
-                    <Link to="/products/trending">Trending</Link>
-                    <Link to="/products/science_fiction">Sci-Fi</Link>
-                    <Link to="/products/mystery">Mystery</Link>
-                    <Link to="/products/fantasy">Fantasy</Link>
-                    <Link to="/products/history">History</Link>
-                    <Link to="/products/poetry">Poetry</Link>
-                    <Link to="/products/romance">Romance</Link>
+                    <Link onClick={() => {window.location.href="/products/best_seller"}} to="/products/best_seller">Best seller</Link>
+                    <Link onClick={() => {window.location.href="/products/trending"}} to="/products/trending">Trending</Link>
+                    <Link onClick={() => {window.location.href="/products/science_fiction"}} to="/products/science_fiction">Sci-Fi</Link>
+                    <Link onClick={() => {window.location.href="/products/mystery"}} to="/products/mystery">Mystery</Link>
+                    <Link onClick={() => {window.location.href="/products/fantasy"}} to="/products/fantasy">Fantasy</Link>
+                    <Link onClick={() => {window.location.href="/products/history"}} to="/products/history">History</Link>
+                    <Link onClick={() => {window.location.href="/products/poetry"}} to="/products/poetry">Poetry</Link>
+                    <Link onClick={() => {window.location.href="/products/romance"}} to="/products/romance">Romance</Link>
                 </div>
             </div>
             <div className="dropdown">
                 <button className="dropdown-button">Categories<KeyboardArrowDownIcon className="arrow"/></button>
                 <div className="dropdown-content">
-                    <a className="link" href="/products/best_seller">Best seller</a>
-                    <a className="link" href="/products/trending">Trending</a>
-                    <a className="link" href="/products/science_fiction">Sci-Fi</a>
-                    <a className="link" href="/products/mystery">Mystery</a>
-                    <a className="link" href="/products/fantasy">Fantasy</a>
-                    <a className="link" href="/products/history">History</a>
-                    <a className="link" href="/products/poetry">Poetry</a>
-                    <a className="link" href="/products/romance">Romance</a>
+                    <Link onClick={() => {window.location.href="/products/best_seller"}} to="/products/best_seller">Best seller</Link>
+                    <Link onClick={() => {window.location.href="/products/trending"}} to="/products/trending">Trending</Link>
+                    <Link onClick={() => {window.location.href="/products/science_fiction"}} to="/products/science_fiction">Sci-Fi</Link>
+                    <Link onClick={() => {window.location.href="/products/mystery"}} to="/products/mystery">Mystery</Link>
+                    <Link onClick={() => {window.location.href="/products/fantasy"}} to="/products/fantasy">Fantasy</Link>
+                    <Link onClick={() => {window.location.href="/products/history"}} to="/products/history">History</Link>
+                    <Link onClick={() => {window.location.href="/products/poetry"}} to="/products/poetry">Poetry</Link>
+                    <Link onClick={() => {window.location.href="/products/romance"}} to="/products/romance">Romance</Link>
                 </div>
             </div>
         </div>

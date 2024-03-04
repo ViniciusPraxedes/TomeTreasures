@@ -30,8 +30,7 @@
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "http://localhost:3000/",
-  "proxy": "https://order-service-kinn.onrender.com/",
+  "homepage": "https://tome-treasures.onrender.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
