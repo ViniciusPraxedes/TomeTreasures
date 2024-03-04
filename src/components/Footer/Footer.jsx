@@ -60,7 +60,7 @@ const Footer = () =>{
                 </div>
 
                 <div className="right">
-                    <img src="/img/payment.png" alt="Payment options image"/>
+                    <img src="https://help.zazzle.com/hc/article_attachments/360010513393/Logos-01.png" alt="Payment options image"/>
                 </div>
 
             </div>
