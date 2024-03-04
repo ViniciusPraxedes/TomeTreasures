@@ -20,7 +20,7 @@ const Navbar = () => {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await axios.get("http://api-gateway.eu-north-1.elasticbeanstalk.com:8080/book/all");
+                const response = await axios.get("https://book-service-r6tn.onrender.com/book/all");
                 setData(response.data);
             } catch (error) {
                 console.error("Error fetching data:", error);

@@ -7,20 +7,6 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 const Reviews = () =>{
 
 
-    const [data, setData] = useState([]);
-
-    useEffect(() => {
-        async function fetchData() {
-            try {
-                const response = await axios.get("http://api-gateway.eu-north-1.elasticbeanstalk.com:8080/book/all/categories");
-                setData(response.data);
-
-            } catch (error) {
-                console.error("Error fetching data:", error);
-            }
-        }
-        fetchData();
-    }, []);
 
 
     const responsive = {
