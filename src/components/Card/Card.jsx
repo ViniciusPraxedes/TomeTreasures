@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 const Card = ({item}) => {
 
     return(
-        <Link onClick={() => {window.location.href=`/product/${item.itemCode}`}} >
+        <Link to={`/product/${item.itemCode}`} >
             <div className="card">
                 <img className="card-image" src={item.imageLink} alt="book image"></img>
                 <h2 className="card-title">{item.name}</h2>
