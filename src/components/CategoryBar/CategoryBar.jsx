@@ -29,7 +29,7 @@ const CategoryBar = () => {
                     <Link
                         to="/products/trending"
                         onClick={() => {
-                            window.location.reload();
+
                             window.location.href = "/products/trending";
                         }}
                     >
