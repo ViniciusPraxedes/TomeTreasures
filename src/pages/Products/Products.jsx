@@ -60,7 +60,6 @@ const Products = () =>{
             try {
                 const response = await axios.get(`https://book-service-r6tn.onrender.com/book/books/${uppercaseCategory}`);
                 setData(response.data);
-                console.log(response);
             } catch (error) {
                 console.error("Error fetching data:", error);
             }
