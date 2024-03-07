@@ -4,6 +4,8 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Carousel from "react-multi-carousel";
+import {Link} from "react-router-dom";
+
 
 
 const FeaturedProducts = ({type}) => {
@@ -63,7 +65,7 @@ const FeaturedProducts = ({type}) => {
 
                 <div className="right">
                     <div className="link">
-                        <a className="link" href="/products/trending"><h2>Go to Trending</h2></a>
+                        <Link className="link" to="/products/trending"><h2>Go to Trending</h2></Link>
                     </div>
                     <div className="icon">
                         <ChevronRightIcon className="icon-right"/>

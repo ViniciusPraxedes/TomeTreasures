@@ -5,6 +5,8 @@ import axios from "axios";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import {Link} from "react-router-dom";
+
 
 const BestSeller = ({type}) => {
 
@@ -62,7 +64,7 @@ const BestSeller = ({type}) => {
 
                 <div className="right">
                     <div className="link">
-                        <a className="link" href="/products/best_seller"><h2>Go to Best sellers</h2></a>
+                        <Link className="link" to="/products/best_seller"><h2>Go to Best sellers</h2></Link>
                     </div>
                     <div className="icon">
                         <ChevronRightIcon className="icon-right"/>

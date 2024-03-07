@@ -21,7 +21,7 @@ const CategoryBar = () => {
             <div className="dropdown">
                 <button className="dropdown-button">Categories<KeyboardArrowDownIcon className="arrow"/></button>
                 <div className="dropdown-content">
-                    <Link to="/products/best_seller">Best seller</Link>
+                    <Link to="/products/best_seller" onClick={() => window.location.reload()} >Best seller</Link>
                     <Link to="/products/trending">Trending</Link>
                     <Link  to="/products/science_fiction">Sci-Fi</Link>
                     <Link  to="/products/mystery">Mystery</Link>
