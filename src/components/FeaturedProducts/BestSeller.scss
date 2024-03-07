@@ -25,6 +25,7 @@
           margin: 0;
           padding: 0;
           font-size: 12px;
+          text-decoration: none;
         }
 
         .icon {
@@ -66,36 +67,28 @@
     @media screen and (max-width: 768px) {
 
       .first {
-        margin:auto;
-        width: 80%;
-        display: flex;
+        margin: auto;
         flex-direction: column;
 
         .left {
           font-size: 20px;
-          margin-right: auto;
-          padding-left: 57px;
+          margin: auto;
+          padding-left: 0;
 
         }
 
 
         .right {
           display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          padding-right: 55px;
+          margin-left: auto;
 
-          .link {
-            margin: 0;
-            padding: 0;
-            font-size: 12px;
-          }
+
 
           .icon {
             padding-top: 10px;
 
             .icon-right{
-              font-size: 50px;
+              font-size: 40px;
             }
           }
         }

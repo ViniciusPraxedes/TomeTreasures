@@ -89,6 +89,7 @@
       h2 {
         padding-left: 20px;
         font-family: 'Kalam', sans-serif;
+        font-weight: normal;
         margin-bottom: -2px;
       }
 
@@ -117,24 +118,27 @@
   @media screen and (max-width: 768px) {
 
     .review-wrapper{
-      h1{
-        margin: auto;
-        padding-left: 50px;
-        padding-bottom: 30px;
-      }
+      flex-direction: column;
+
 
       .favorites {
         display: flex;
         flex-direction: column-reverse;
         margin: auto;
+        align-items: center;
+
+        h1{
+          margin: auto;
+          padding-left: 50px;
+          padding-bottom: 30px;
+        }
 
         .favorite-icon {
-          padding-left: 50px;
-
+          padding-left: 40px;
           .icon{
-            margin: auto;
-            padding-top: 10px;
-            padding-right: 40vh;
+            margin: 0;
+            padding: 0;
+
           }
         }
       }
@@ -158,25 +162,31 @@
           h2{
             font-size: 15px;
           }
-          .user-review{
 
+          .user-review{
 
             .user-image{
               img{
                 display: none;
               }
 
-
             }
 
             .user-info {
+              background-color: #2879fe;
+              margin-top: 20px;
+              padding: 0;
+              display: flex;
+              flex-direction: row;
+              display: none;
+
               h3 {
                 font-size: 12px;
 
-                padding-left: 10px;
               }
 
               p {
+
               }
             }
           }

@@ -1,5 +1,5 @@
 import Card from "../Card/Card";
-import "./FeaturedProducts.scss"
+import "./BestSeller.scss"
 import {useEffect, useState} from "react";
 import axios from "axios";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
