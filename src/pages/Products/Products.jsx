@@ -1,6 +1,5 @@
 import {useLocation, useParams} from "react-router-dom";
 import React, {useEffect, useState} from "react";
-import List from "../../components/List/List";
 import "./Products.scss"
 import axios from "axios";
 import Card from "../../components/Card/Card";
