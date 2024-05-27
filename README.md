@@ -1,68 +1,43 @@
-<h1>📚 Full Stack Book E-Commerce</h1>
+# Tome Treasures - Frontend
 
-<p>Welcome to my Full Stack Book E-Commerce project! This project is a fully functional book e-commerce platform built using Java, Spring, React, AWS, Redux, and Stripe. It provides an intuitive interface for users to browse, search, and purchase books securely.</p>
-<p>Live demo here: <a href="https://tome-treasures.onrender.com/"> https://tome-treasures.onrender.com/</a></p>
+🌟 **Full stack e-commerce, fully functional using Stripe as payment solution**
 
-<h2>💡 Motivation</h2>
+Tome Treasures is a comprehensive e-commerce platform for book enthusiasts, allowing users to browse, search, filter, and purchase books seamlessly.
 
-<p>I created this project with the primary goal of learning React while also exploring full-stack development concepts. Additionally, I wanted to gain experience with integrating payment solutions, hence I utilized Stripe for secure transactions. The backend database is hosted on AWS RDS, ensuring scalability and reliability.</p>
+## 💡 Purpose
 
-<h2>🚀 Features</h2>
+I created this project to learn React. The books information is saved to a database on AWS RDS. The shopping cart was made using Redux, the payment solution is provided by Stripe, and the project is hosted on Render.
 
-<ul>
-  <li>Browse a diverse selection of books</li>
-  <li>Search for specific titles or authors</li>
-  <li>Add books to the shopping cart</li>
-  <li>View and manage the shopping cart</li>
-  <li>Secure checkout process using Stripe</li>
-  <li>User-friendly interface for a seamless shopping experience</li>
-</ul>
+## 🌟 Key Features
 
-<h2>🔧 Tech Stack</h2>
+- **Browse Books**: Users can browse through a collection of books.
+- **Search for Books**: Users can search for specific books.
+- **Filter Books**: Users can filter books based on categories and other criteria.
+- **Add Book to Shopping Cart**: Users can add books to their shopping cart.
+- **Pay for Book**: Users can pay for their books using Stripe.
 
-<h3>Frontend:</h3>
+## 🔧 Tech Stack
 
-<ul>
-  <li>React: Used for building the user interface and handling frontend logic.</li>
-  <li>Redux: Implemented for managing state, especially for the shopping cart functionality.</li>
-  <li>Stripe: Integrated for secure payment processing.</li>
-  <li>Netlify: Hosting platform for deploying the frontend application.</li>
-</ul>
+- **Frontend**: React, Redux
+- **Backend**: Java, Spring (see [book-service](https://github.com/ViniciusPraxedes/book-service) and [order-service](https://github.com/ViniciusPraxedes/order-service))
+- **Database**: AWS RDS
+- **Payment**: Stripe
+- **Hosting**: Render
 
-<h3>Backend:</h3>
+## 🌟 Live Demo
 
-<ul>
-  <li>Java: Used for backend development.</li>
-  <li>Spring Framework: Leveraged for building robust and scalable backend services.</li>
-  <li>AWS RDS: Hosts the database for storing book information.</li>
-</ul>
+Check out the live demo: [tome-treasures.onrender.com](https://tome-treasures.onrender.com/)
 
-<h2>🛠️ Setup Instructions</h2>
+## Getting Started
 
-<ol>
-  <li>Clone this repository to your local machine.</li>
-  <code>
-    git clone https://github.com/yourusername/full-stack-book-ecommerce.git
-  </code>
-  <li>Navigate to the project directory.</li>
-  <code>
-    cd full-stack-book-ecommerce
-  </code>
-  <li>Set up the frontend:</li>
-  <ul>
-    <li>Ensure you have Node.js and npm installed.</li>
-    <li>Navigate to the frontend directory.</li>
-    <li>Install dependencies: <code>npm install</code></li>
-    <li>Start the frontend server: <code>npm start</code></li>
-  </ul>
-  <li>Access the application:</li>
-  <p>Open your web browser and go to <a href="http://localhost:3000">http://localhost:3000</a> to view the application.</p>
-</ol>
+### Prerequisites
 
-<h2>🤝 Contributing</h2>
+- Node.js
 
-<p>Contributions are welcome! If you have any suggestions, feature requests, or bug fixes, feel free to open an issue or submit a pull request.</p>
+### Installation
 
-<h2>📄 License</h2>
+1. **Clone the repository**
 
-<p>This project is licensed under the MIT License.</p>
+   ```bash
+   git clone https://github.com/ViniciusPraxedes/TomeTreasures.git
+   cd TomeTreasures
