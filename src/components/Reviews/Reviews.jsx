@@ -60,7 +60,6 @@ const Reviews = () =>{
                 <div className="review">
                     <div className="right">
                         <h2>"A mesmerizing journey into a richly imagined world."</h2>
-                        <a href="/product/5ecb7484-2587-4fd8-9841-682c8ac71b24"></a>
                         <div className="user-review">
                             <div className="user-image">
                                 <img src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_images/2018-09/shutterstock_648907024.jpg?itok=7lrLYx-B" alt="user image"/>
@@ -71,18 +70,15 @@ const Reviews = () =>{
                             </div>
                         </div>
                     </div>
-                        <a href="/product/5ecb7484-2587-4fd8-9841-682c8ac71b24">
                             <div className="left">
                                 <img src="https://m.media-amazon.com/images/I/81nq+ewtkcL._AC_UF1000,1000_QL80_.jpg" alt="book cover"/>
                             </div>
-                        </a>
 
                 </div>
 
                 <div className="review">
                     <div className="right">
                         <h2>"An amazing classical book"</h2>
-                        <a href="/product/8bcb8d93-21db-45f1-9fe1-a126482ad76d"></a>
 
                         <div className="user-review">
 
@@ -98,18 +94,15 @@ const Reviews = () =>{
                         </div>
 
                     </div>
-                    <a href="/product/8bcb8d93-21db-45f1-9fe1-a126482ad76d">
                         <div className="left">
                             <img src="https://m.media-amazon.com/images/I/71auePo1a8L._AC_UF1000,1000_QL80_.jpg" alt="book cover"/>
                         </div>
-                    </a>
 
                 </div>
 
                 <div className="review">
                     <div className="right">
                         <h2>"A fascinating journey through ancient Rome."</h2>
-                        <a href="/product/7d4c1524-f651-4ada-8fcc-c2fb7693035b"></a>
 
                         <div className="user-review">
 
@@ -125,18 +118,15 @@ const Reviews = () =>{
                         </div>
 
                     </div>
-                    <a href="/product/7d4c1524-f651-4ada-8fcc-c2fb7693035b">
                         <div className="left">
                             <img src="https://m.media-amazon.com/images/I/71596LpQnQL._AC_UF1000,1000_QL80_.jpg" alt="book cover"/>
                         </div>
-                    </a>
 
                 </div>
 
                 <div className="review">
                     <div className="right">
                         <h2>"A gripping mystery set in modern Sweden."</h2>
-                        <a href="/product/712bf9bf-f37a-49c5-97d0-18eb6561bc52"></a>
 
                         <div className="user-review">
 
@@ -152,18 +142,15 @@ const Reviews = () =>{
                         </div>
 
                     </div>
-                    <a href="/product/712bf9bf-f37a-49c5-97d0-18eb6561bc52">
                         <div className="left">
                             <img src="https://m.media-amazon.com/images/I/81UOA8fDGaL._AC_UF1000,1000_QL80_.jpg" alt="book cover"/>
                         </div>
-                    </a>
 
                 </div>
 
                 <div className="review">
                     <div className="right">
                         <h2>"An enchanting romance that will tug at your heartstrings."</h2>
-                        <a href="/product/3a8296e2-52fb-47fa-8496-482c44be0659"></a>
 
                         <div className="user-review">
 
@@ -179,18 +166,15 @@ const Reviews = () =>{
                         </div>
 
                     </div>
-                    <a href="/product/3a8296e2-52fb-47fa-8496-482c44be0659">
                         <div className="left">
                             <img src="https://m.media-amazon.com/images/I/91qnLT5qrbL._AC_UF1000,1000_QL80_.jpg" alt="book cover"/>
                         </div>
-                    </a>
 
                 </div>
 
                 <div className="review">
                     <div className="right">
                         <h2>"A thrilling adventure in the wizarding world."</h2>
-                        <a href="/product/f1760a56-472a-4f64-a7ad-ef19dcf7aa5e"></a>
 
                         <div className="user-review">
 
@@ -206,11 +190,9 @@ const Reviews = () =>{
                         </div>
 
                     </div>
-                    <a href="/product/f1760a56-472a-4f64-a7ad-ef19dcf7aa5e">
                         <div className="left">
                             <img src="https://m.media-amazon.com/images/I/71RVt35ZAbL._AC_UF1000,1000_QL80_.jpg" alt="book cover"/>
                         </div>
-                    </a>
 
                 </div>
 
