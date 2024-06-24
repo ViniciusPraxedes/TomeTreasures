@@ -52,7 +52,7 @@ import {useEffect, useState} from "react";
                     <span>SUBTOTAL:</span>
                     <span>${totalPrice()}</span>
                 </div>
-                    <form action="https://order-service-kinn.onrender.com/order/create-checkout-session"  method="POST">
+                    <form action="https://book-service-r6tn.onrender.com/order/create-checkout-session"  method="POST">
                         <input type="hidden" name="price" id="priceInput" value={totalPrice()}/>
                         {showButton && (
                             <button type="submit">
